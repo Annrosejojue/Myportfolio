@@ -3,119 +3,196 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ann Rose Edakkalathur – AI & Backend Developer Portfolio</title>
+  <title>Ann Rose Edakkalathur – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="overlay"></div>
+  <div class="gradient-bg"></div>
+
   <header>
     <h1>Ann Rose Edakkalathur</h1>
     <p>AI, Backend & Data Science Engineer | Java/Spring Boot • ML & Predictive Analytics • Cloud (Azure/AWS)</p>
-    <nav>
+    <a href="AnnRoseResume.pdf" class="resume-btn" download>Download Resume</a>
+    <nav id="navbar">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <img src="images/Ann1.jpeg" alt="Ann Rose" class="profile-pic"/>
-    <p>
-      I’m a Backend Developer with hands-on experience designing, building, and optimizing scalable server-side applications using Java, Spring Boot, REST APIs, and cloud technologies. I specialize in backend architecture, API development, database design, and performance tuning, with a strong foundation in data structures, algorithms, and secure application development.
-    </p>
-    <p>
-      At Infosys, I engineered production-ready backend modules, upgraded enterprise systems, and delivered secure, high-performance solutions for clients across the US, Saudi Arabia, and India. My work improved system efficiency, reduced response times, and enhanced application reliability across multiple large-scale platforms.
-    </p>
-    <p>
-      I also bring experience in data analysis and program support through my work at Mercy University’s Centre for STEM Education, where I contributed to data-driven improvements for STEM outreach initiatives and supported hands-on learning programs for K–12 students.
-    </p>
-    <p>
-      As a Teaching Assistant at Mercy University, I mentored students in Python programming, algorithm design, and problem-solving — strengthening both their technical skills and my ability to communicate complex concepts clearly.
-    </p>
-    <p>
-      I hold a Master’s in Computer Science from Mercy University and a Bachelor’s in Electronics and Communication Engineering. My technical strengths include Java, Python, SQL, Spring Boot, cloud platforms (Azure, AWS), and machine learning fundamentals. I’m certified in Azure Fundamentals (AZ‑900), Azure Administrator (AZ‑104), Azure AI (AI‑900), and Infosys SQL Professional.
-    </p>
+    <div class="about-container">
+      <img src="images/Ann1.jpeg" class="profile-pic" alt="Ann Rose" />
+      <div>
+        <p>I’m a Backend Developer with hands-on experience designing, building, and optimizing scalable server-side applications using Java, Spring Boot, REST APIs, and cloud technologies.</p>
+        <p>At Infosys, I engineered production-ready backend modules, upgraded enterprise systems, and delivered secure, high-performance solutions for clients across the US, Saudi Arabia, and India.</p>
+        <p>I also bring experience in data analysis and program support through my work at Mercy University’s Centre for STEM Education.</p>
+        <p>As a Teaching Assistant, I mentored students in Python programming, algorithm design, and problem-solving.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Technical Skills</h2>
-    <ul class="skills-list">
-      <li>Java, Python, SQL, HTML, CSS, JavaScript, R</li>
-      <li>Spring Boot, REST APIs, Microservices</li>
-      <li>Azure (Databricks, ML Studio, Compute, Storage), AWS (EC2, S3, Lambda), GCP</li>
-      <li>GitHub, Postman, IntelliJ, VS Code, Android Studio, Tableau, MATLAB</li>
-      <li>Power Automate, Power Apps, Microsoft Office Suite</li>
-      <li>Machine Learning: NLP, Predictive Modeling, Feature Engineering, TensorFlow, PyTorch, XGBoost</li>
-      <li>Data Tools: Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn</li>
-    </ul>
-    <p><strong>Certifications:</strong> AZ‑900, AZ‑104, AI‑900, Infosys SQL Professional</p>
-  </section>
-
-  <section id="experience">
-    <h2>Professional Experience</h2>
-
-    <div class="experience-card">
-      <h3>System Engineer – Infosys Limited, India (Nov 2022 – Sep 2024)</h3>
-      <h4>Orbit – Infosys Internal Project</h4>
-      <p>Designed and deployed Java Spring Boot features and REST APIs for an internal employee attendance portal using Git and Maven, improving operational efficiency and user experience by 25%.</p>
-      <h4>Beacon Healthcare Systems – USA</h4>
-      <p>Led Java version upgrade and implemented new features for Medicare claims processing software, resulting in a 30% improvement in accuracy and enhanced system performance through rigorous testing and end-to-end development.</p>
-      <h4>Professional Forum – Neom, Saudi Arabia</h4>
-      <p>Developed secure backend modules using Java, Spring Boot, and Spring Security for Neom's social media platform, achieving a 60% reduction in response times and improved application security.</p>
-      <h4>The Line – Neom, Saudi Arabia</h4>
-      <p>Delivered custom web and mobile solutions using Microsoft Power Platform, including website creation, workflow automation, and mobile app development — all with zero downtime during implementation.</p>
-    </div>
-
-    <div class="experience-card">
-      <h3>Data Analyst & STEM Program Assistant – Mercy University, NY (Sep 2025 – Dec 2025)</h3>
-      <p>Supported STEM outreach initiatives including Westchester STEM Ambassadors, USA Blue Schools, and STEM Academies. Analyzed student engagement and program performance data to support Verizon STEM initiatives. Coordinated logistics, managed tech resources, and collaborated with faculty to deliver inclusive learning experiences for K–12 students.</p>
-    </div>
-
-    <div class="experience-card">
-      <h3>Teaching Assistant – Mercy University, NY (Jan 2025 – Dec 2025)</h3>
-      <p>Mentored students in Python programming, algorithm design, and problem-solving. Provided grading support, feedback, and guidance to improve student comprehension and coding proficiency.</p>
+    <div class="skills-grid">
+      <div>
+        <h4>Languages</h4>
+        <p>Java, Python, SQL, HTML, CSS, JavaScript, R</p>
+      </div>
+      <div>
+        <h4>Frameworks & Tools</h4>
+        <p>Spring Boot, REST APIs, GitHub, Postman, Tableau, IntelliJ, VS Code</p>
+      </div>
+      <div>
+        <h4>Cloud Platforms</h4>
+        <p>Azure (Databricks, ML Studio), AWS (EC2, S3, Lambda), GCP</p>
+      </div>
+      <div>
+        <h4>Machine Learning</h4>
+        <p>NLP, Predictive Modeling, TensorFlow, PyTorch, XGBoost, Scikit-Learn</p>
+      </div>
+      <div>
+        <h4>Data Tools</h4>
+        <p>Pandas, NumPy, Matplotlib, Seaborn, Jupyter Notebook, Google Colab</p>
+      </div>
+      <div>
+        <h4>Certifications</h4>
+        <p>AZ‑900, AZ‑104, AI‑900, Infosys SQL Professional</p>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
+<section id="experience" class="fade-in">
+  <h2>Experience</h2>
+
+  <div class="timeline">
+
+    <!-- DATA ANALYST -->
+    <div class="timeline-item expandable">
+      <div class="timeline-dot"></div>
+      <div class="timeline-header" onclick="toggleDetails(this)">
+        <h3>Data Analyst – Mercy University (Sep 2025 – Dec 2025)</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="timeline-details">
+        <p>• Analyzed engagement data for STEM programs and Verizon STEM initiatives.</p>
+        <p>• Built dashboards to track student participation and program outcomes.</p>
+        <p>• Automated reporting workflows using Python and Excel.</p>
+        <p>• Collaborated with faculty to improve outreach strategies.</p>
+      </div>
+    </div>
+
+    <!-- TEACHING ASSISTANT -->
+    <div class="timeline-item expandable">
+      <div class="timeline-dot"></div>
+      <div class="timeline-header" onclick="toggleDetails(this)">
+        <h3>Teaching Assistant – Mercy University (Jan 2025 – Dec 2025)</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="timeline-details">
+        <p>• Mentored students in Python, algorithms, and problem-solving.</p>
+        <p>• Assisted with grading, lab sessions, and tutoring.</p>
+        <p>• Helped students debug code and understand core CS concepts.</p>
+      </div>
+    </div>
+
+    <!-- INFOSYS -->
+    <div class="timeline-item expandable">
+      <div class="timeline-dot"></div>
+      <div class="timeline-header" onclick="toggleDetails(this)">
+        <h3>System Engineer – Infosys (Nov 2022 – Sep 2024)</h3>
+        <span class="arrow">▼</span>
+      </div>
+      <div class="timeline-details">
+        <p>• Designed and deployed Java Spring Boot features and REST APIs for an internal employee attendance portal using Git and Maven, improving operational efficiency and user experience by 25%.</p>
+        <p>• Led Java version upgrade and implemented new features for Medicare software at Beacon Healthcare Systems (USA), resulting in a 30% improvement in accuracy and enhanced system performance through rigorous testing and end‑to‑end development.</p>
+        <p>• Developed secure backend modules using Java, Spring Boot, and Spring Security for Neom’s social media platform, achieving a 60% reduction in response times and improved application security.</p>
+        <p>• Delivered custom web and mobile solutions for The Line (Neom, Saudi Arabia) using Microsoft Power Platform, including website creation, workflow automation, and mobile app development all with zero downtime during implementation.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="education" class="fade-in">
+  <h2>Education</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>
+          <a href="https://www.mercy.edu" target="_blank" class="edu-link">
+            Mercy University
+          </a>
+        </h3>
+        <p>Master’s in Computer Science (Sep 2024 – Dec 2025)<br/>GPA: 3.9</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>          
+          <a href="https://ktu.edu.in/" target="_blank" class="edu-link">
+            APJ Abdul Kalam Technological University
+          </a></h3>
+        <p>B.Tech in Electronics & Communication Engineering (Jun 2018 – Jun 2022)<br/>GPA: 3.2</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="projects" class="fade-in">
     <h2>Academic Projects</h2>
 
     <div class="project-card">
+      <h3>Personalized News Recommendation System – MIND Dataset</h3>
+      <p>Built and compared multiple recommendation models using user behavior and article metadata. Evaluated with Precision@K, MAP, NDCG, and AUC.</p>
+    </div>
+
+    <div class="project-card">
       <h3>Drive Smart – Predictive Vehicle Maintenance</h3>
-      <p>Developed a machine learning model to predict vehicle maintenance needs based on mileage, age, service history, and technical specifications. Applied advanced preprocessing techniques and feature engineering, and deployed the model as a Flask-based web app for real-time predictions.</p>
+      <p>Developed ML model for vehicle maintenance prediction and deployed as Flask app for real-time scheduling.</p>
     </div>
 
     <div class="project-card">
       <h3>Cancer Detection Using AI</h3>
-      <p>Designed an AI-powered diagnostic tool for early brain tumor detection using MRI scans. Leveraged CNNs to achieve over 97% accuracy in classifying tumor vs. non-tumor images, with segmentation and 3D modeling for clinical assessment.</p>
+      <p>Built CNN-based tumor detection achieving 97% accuracy using MRI scans and 3D segmentation.</p>
     </div>
 
     <div class="project-card">
       <h3>Home Rentals Application</h3>
-      <p>Built a full-stack web platform for apartment rentals with secure JWT-based login, real-time booking notifications, and role-based access. Developed using Angular, JavaScript, and MongoDB.</p>
+      <p>Full-stack rental platform with JWT login, real-time notifications, and role-based access.</p>
     </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-
-    <div class="education-card">
-      <h3>Mercy University, Dobbs Ferry, NY</h3>
-      <p>Master’s in Computer Science (Sep 2024 – Dec 2025)<br/>GPA: 3.9</p>
-    </div>
-
-    <div class="education-card">
-      <h3>APJ Abdul Kalam Technological University, Kerala, India</h3>
-      <p>Bachelor of Technology in Electronics and Communication Engineering (Jun 2018 – Jun 2022)<br/>GPA: 3.2</p>
-    </div>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact Me</h2>
-    <p><strong>Email:</strong> <a href="mailto:annrosejoju@gmail.com">annrosejoju@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ann-rose-joju-edakkalathur-5582811a3/" target="_blank">LinkedIn</a></p>
-    <p><strong>GitHub:</strong> <a href="https://github.com/Annrosejoju" target="_blank">GitHub</a></p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <button id="backToTop">↑</button>
+  <script>
+function toggleDetails(element) {
+  const item = element.parentElement;
+  item.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
